@@ -132,3 +132,21 @@ q {
 .header__icon-link:hover svg {
   color: var(--secondary-ui-color);
 }
+
+/* INTRO SECTION */
+
+.intro {
+  background-color: var(--secondary-bg-color);
+  padding: 100px 0;
+}
+
+.intro__description {
+  text-align: center;
+  font-size: 18px;
+}
+
+.intro__sign {
+  margin-top: 25px;
+  text-align: right;
+  color: var(--disabled-ui-color);
+}
