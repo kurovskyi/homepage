@@ -300,3 +300,28 @@ section {
   align-items: center;
   justify-content: space-evenly;
 }
+
+/* CHARACTER SECTION */
+
+.character__title {
+  text-align: center;
+}
+
+.character__inner-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.character__img-wrapper img {
+  width: 300px;
+}
+
+.character__description {
+  width: 50%;
+}
+
+.character__description span {
+  color: var(--primary-ui-color);
+}
