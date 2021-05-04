@@ -73,6 +73,15 @@ h2::after {
   content: ' />';
 }
 
+h3 {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+h3::after {
+  content: ' -';
+  color: var(--primary-ui-color);
+}
+
 ul,
 ol {
   margin: 0;
@@ -103,6 +112,9 @@ a {
   text-decoration: none;
   color: var(--primary-ui-color);
   cursor: pointer;
+}
+a:hover {
+  color: var(--secondary-ui-color);
 }
 
 q {
@@ -323,5 +335,28 @@ section {
 }
 
 .character__description span {
+  color: var(--primary-ui-color);
+}
+
+/* ADDITIONAL SECTION */
+
+.additional__cols-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -25px -50px;
+}
+
+.additional__col {
+  width: 33.333%;
+  margin-bottom: 50px;
+  padding: 0 25px;
+}
+
+.additional__col-description {
+  margin-top: 25px;
+}
+
+.additional__col-description span {
   color: var(--primary-ui-color);
 }
