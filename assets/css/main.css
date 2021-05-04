@@ -62,6 +62,16 @@ h2 {
   font-size: 28px;
   letter-spacing: 4px;
 }
+h2::before,
+h2::after {
+  color: var(--primary-ui-color);
+}
+h2::before {
+  content: '<';
+}
+h2::after {
+  content: ' />';
+}
 
 ul,
 ol {
@@ -261,4 +271,24 @@ section {
 
 .timeline__item-list {
   display: inline-block;
+}
+
+/* LANGUAGES SECTION */
+
+.languages__inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.languages__description p {
+  font-weight: 600;
+}
+
+.languages__description span {
+  margin-top: 5px;
+  display: block;
+  color: var(--disabled-ui-color);
+  font-size: 16px;
+  text-align: right;
 }
