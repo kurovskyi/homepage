@@ -254,7 +254,7 @@ section {
   background-color: var(--primary-bg-color);
 }
 
-.timeline__item-title span {
+.timeline__item-title strong {
   font-size: 28px;
   font-weight: bold;
 }
