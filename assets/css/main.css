@@ -100,16 +100,29 @@ q {
   font-weight: bold;
 }
 
+section {
+  padding: 100px 0;
+}
+
+/* COMMON STYLES */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
+.bg {
+  background-color: var(--primary-bg-color);
+}
+
+.bg-alt {
+  background-color: var(--secondary-bg-color);
+}
+
 /* HEADER SECTION */
 
 .header {
-  background-color: var(--primary-bg-color);
   padding: 100px 0;
 }
 
@@ -139,7 +152,11 @@ q {
 }
 
 .header__icon-link {
+  display: inline-block;
   margin: 0 5px;
+}
+
+.header__icon-link a {
   padding: 5px;
 }
 
@@ -153,11 +170,6 @@ q {
 }
 
 /* INTRO SECTION */
-
-.intro {
-  background-color: var(--secondary-bg-color);
-  padding: 100px 0;
-}
 
 .intro__description {
   text-align: center;
@@ -173,7 +185,6 @@ q {
 /* TIMELINE SECTION */
 
 .timeline {
-  padding: 100px 0;
   position: relative;
 }
 
