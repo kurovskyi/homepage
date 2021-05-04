@@ -29,6 +29,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 18px;
+  line-height: 1.5;
   color: var(--primary-text-color);
   min-width: 320px;
   background-color: var(--primary-bg-color);
@@ -118,8 +119,8 @@ li {
   position: relative;
   display: flex;
   font-weight: 600;
-  line-height: 1.5;
   text-align: left;
+  padding: 5px 0;
 }
 li::before {
   content: '';
@@ -127,7 +128,7 @@ li::before {
   height: 8px;
   border-radius: 2px;
   background-color: var(--primary-ui-color);
-  margin: 9px 5px 0 5px;
+  margin: 9px 10px 0 5px;
 }
 
 @media (max-width: 768px) {
@@ -180,6 +181,11 @@ section {
 }
 .bg.bg-alt {
   background-color: var(--secondary-bg-color);
+}
+
+.nice-slash::before {
+  content: '/';
+  color: var(--primary-ui-color);
 }
 
 /* HEADER SECTION */
@@ -251,11 +257,11 @@ section {
 
 /* INTRO SECTION */
 
-.intro__description {
+.intro__description p {
   text-align: center;
 }
 
-.intro__sign {
+.intro__sign p {
   font-size: 16px;
   margin-top: 25px;
   text-align: right;
@@ -263,7 +269,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .intro__sign {
+  .intro__sign p {
     font-size: 14px;
   }
 }
@@ -378,14 +384,14 @@ section {
   }
 }
 
-.timeline__item-list__container {
+.timeline__item-list {
   max-width: 80%;
   display: inline-flex;
   justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .timeline__item-list__container {
+  .timeline__item-list {
     max-width: 75%;
   }
 }
@@ -416,7 +422,7 @@ section {
   font-weight: 600;
 }
 
-.languages__description span {
+.languages__description-annotation span {
   margin-top: 5px;
   display: block;
   color: var(--disabled-ui-color);
@@ -425,7 +431,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .languages__description span {
+  .languages__description-annotation span {
     font-size: 14px;
     text-align: center;
   }
@@ -446,7 +452,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .skills__list-container {
+  .skills__list {
     width: 100%;
     margin-top: 25px;
     text-align: center;
@@ -454,7 +460,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .skills__list {
+  .skills__list ul {
     display: inline-block;
     text-align: center;
   }
@@ -500,10 +506,6 @@ section {
   }
 }
 
-.character__description span {
-  color: var(--primary-ui-color);
-}
-
 /* ADDITIONAL SECTION */
 
 .additional__cols-container {
@@ -531,10 +533,6 @@ section {
   }
 }
 
-.additional__col-description {
+.additional__col-description p {
   margin-top: 25px;
-}
-
-.additional__col-description span {
-  color: var(--primary-ui-color);
 }
