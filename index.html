@@ -2,9 +2,532 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="It's like my CV or Résumé as you want : )"
+    />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="notranslate" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="robots" content="index,follow" />
+    <meta name="subject" content="Résumé" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="white" />
+    <meta
+      property="og:description"
+      content="&mdash; I am the IT promoter among my friends, I gave up coffee and gray hoodies. The best approach to programming is to think first. I love to try new technologies and now my favorite areas are Web and Mobile. Sometimes I take so much initiative that I make layouts in Figma 😅. And the most important thing: Knowledge of JavaScript doesn't make you a nerd 😊."
+    />
+    <meta property="og:image:alt" content="Screenshot of the homepage" />
+    <meta property="og:image:height" content="1800" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="2880" />
+    <!-- TODO: Create an image and uncomment this: -->
+    <!-- <meta property="og:image" content="https://kurovskyi.github.io/homepage/assets/images/og-image.png" /> -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Dmytro Kurovskyi &mdash; Résumé" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kurovskyi.github.io/homepage" />
     <title>Résumé</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/images/favicon-512x512.png"
+    />
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="me" href="https://www.fb.com/kurovskyi.d" type="text/html" />
+    <link rel="me" href="https://t.me/kurovskyi_d" type="text/html" />
+    <link
+      rel="me"
+      href="https://www.linkedin.com/in/carbony"
+      type="text/html"
+    />
+    <link rel="me" href="https://github.com/kurovskyi" type="text/html" />
+    <link rel="me" href="mailto:dmytro.kurovskyi@gmail.com" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <header class="header bg">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__inner-container">
+            <div class="header__img-wrapper">
+              <img src="./assets/images/me-main.jpg" alt="It's me 😊" />
+            </div>
+            <h1 class="header__title">Dmytro Kurovskyi</h1>
+            <div class="header__icons-container">
+              <div class="header__icon-link linkedin-link">
+                <a href="https://www.linkedin.com/in/carbony" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-linkedin"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    ></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__icon-link facebook-link">
+                <a href="https://www.fb.com/kurovskyi.d" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-facebook"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__icon-link telegram-link">
+                <a href="https://t.me/kurovskyi_d" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-send"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__icon-link github-link">
+                <a href="https://github.com/kurovskyi" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__icon-link">
+                <a href="mailto:dmytro.kurovskyi@gmail.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-mail"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro bg bg-alt">
+        <div class="container">
+          <div class="intro__description">
+            <p>
+              <q
+                >&mdash; I am the IT promoter among my friends, I gave up coffee
+                and gray hoodies. The best approach to programming is to think
+                first. I love to try new technologies and now my favorite areas
+                are Web and Mobile. Sometimes I take so much initiative that I
+                make layouts in Figma 😅. And the most important thing:
+                Knowledge of JavaScript doesn't make you a nerd 😊.</q
+              >
+            </p>
+          </div>
+          <div class="intro__sign">
+            <p>Now send everyone my cool quote and link : )</p>
+          </div>
+        </div>
+      </section>
+      <section class="timeline">
+        <div class="container">
+          <div class="timeline__title">
+            <h2>EXPERIENCE</h2>
+          </div>
+          <div class="timeline__inner-container">
+            <!-- TIMELINE BARS -->
+            <div class="timeline__filled-bar"></div>
+            <div class="timeline__progress-bar"></div>
+
+            <div class="timeline__item">
+              <div class="timeline__item-title">
+                <strong>2021</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li>
+                    <p>Finished first large commercial Freelance project</p>
+                  </li>
+                  <li><p>Gathered a team to work on freelance projects</p></li>
+                  <br />
+                  <li>
+                    <p>
+                      Promote a healthy lifestyle, go in for swimming, running
+                      and cycling. Like to eat healthy food. Like to spend free
+                      time by learning something new, reading books, watching
+                      series and movies, listening music or by walking with
+                      friends
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item timeline__item--alt">
+              <div class="timeline__item-title">
+                <strong>2020</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li><p>Started working as Full Stack Dev</p></li>
+                  <li>
+                    <p>
+                      Got I place at 24 NURE exhibition of scientific projects
+                      with project “Droneey”
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Got top 15 startups at Garage48 hackathon with project
+                      “HOVY”
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__item-title">
+                <strong>2019</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li><p>Started working on Freelance as Front-End Dev</p></li>
+                  <li>
+                    <p>
+                      Started working in product company "Factor.Media" as
+                      Mobile (React Native) Developer
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Got III place at hackathon “Hack for locals” with project
+                      “Studlex”
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Got II place at hackathon “Hack-A-Train” with project
+                      “Bronify”
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Got I place at 23 NURE exhibition of scientific projects
+                      with project “Accomplace”
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Created startup “Studlex” – mobile app for students
+                      motivation
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Created startup “Droneey” – system of automated audio
+                      advertising with drones
+                    </p>
+                  </li>
+                  <li><p>Finished program in Startup Incubator "Yep!"</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item timeline__item--alt">
+              <div class="timeline__item-title">
+                <strong>2018</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li>
+                    <p>
+                      Started studying at NURE (Kharkiv National University of
+                      Radio Electronics), faculty of computer science,
+                      specialty: computer science (artificial intelligence)
+                    </p>
+                  </li>
+                  <br />
+                  <li><p>Wrote ZNO 🥲</p></li>
+                  <br />
+                  <li>
+                    <p>
+                      Got I place at “GoldenByte” with project “Accomplace” –
+                      web service that helps you find accomplices
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__item-title">
+                <strong>2017</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li><p>Started working as Full Stack Dev</p></li>
+                  <li>
+                    <p>
+                      Got I place at 24 NURE exhibition of scientific projects
+                      with project “Droneey”
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Got top 15 startups at Garage48 hackathon with project
+                      “HOVY”
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item timeline__item--alt">
+              <div class="timeline__item-title">
+                <strong>2014</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li><p>Got dog called "Max" 🐶</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__item-title">
+                <strong>2007</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li><p>Started watching anime</p></li>
+                  <li>
+                    <p>Started studying in Khrakiv Specialized School 162</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline__item timeline__item--alt">
+              <div class="timeline__item-title">
+                <strong>2001</strong>
+              </div>
+              <div class="timeline__item-list">
+                <ul>
+                  <li><p>Born in Kharkiv, Ukraine 🇺🇦</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="languages bg bg-alt">
+        <div class="container">
+          <div class="languages__inner-container">
+            <div class="languages__title">
+              <h2>LANGUAGES</h2>
+            </div>
+            <div>
+              <div class="languages__description">
+                <p>
+                  🇺🇸 ENGLISH <span class="nice-slash"></span> 🇺🇦 UKRAINIAN
+                  <span class="nice-slash"></span> 🌐 RUSSIAN
+                </p>
+              </div>
+              <div class="languages__description-annotation">
+                <span>* But I know a lot of programming languages 😤</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills bg">
+        <div class="container">
+          <div class="skills__inner-container">
+            <div class="skills__list">
+              <ul>
+                <li>
+                  <p>HTML <span class="nice-slash"></span> CSS</p>
+                </li>
+                <li>
+                  <p>JavaScript <span class="nice-slash"></span> TypeScript</p>
+                </li>
+                <li>
+                  <p>ReactJS <span class="nice-slash"></span> React Native</p>
+                </li>
+                <li><p>NodeJS</p></li>
+              </ul>
+            </div>
+            <div class="skills__title">
+              <h2>SKILLS</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="character bg bg-alt">
+        <div class="container">
+          <div class="character__title">
+            <h2>CHARACTER</h2>
+          </div>
+          <div class="character__inner-container">
+            <div class="character__img-wrapper">
+              <img
+                src="./assets/images/steve-jobs.png"
+                alt="It's my character!"
+              />
+            </div>
+            <div class="character__description">
+              <p>
+                Yes, you see Steve Jobs and this is my personality type &mdash;
+                <a
+                  href="https://www.16personalities.com/entj-personality"
+                  target="_blank"
+                  ><b>COMMANDER</b></a
+                >! Isn't it cool)? Ok, let's talk about me:<br /><br />
+                <strong
+                  >LEADER 😎 <span class="nice-slash"></span> LOYAL
+                  <span class="nice-slash"></span> INTERESTING
+                  <span class="nice-slash"></span> CALM
+                  <span class="nice-slash"></span> OPTIMISTIC
+                  <span class="nice-slash"></span> SMILING
+                  <span class="nice-slash"></span> ADVENTUROUS
+                  <span class="nice-slash"></span> KINDLY
+                  <span class="nice-slash"></span> DECISIVE
+                  <span class="nice-slash"></span> SELF-CONFIDENT
+                  <span class="nice-slash"></span> CLEVER
+                  <span class="nice-slash"></span> CAREFUL
+                  <span class="nice-slash"></span> PROVIDENT
+                  <span class="nice-slash"></span> AGNOSTIC
+                  <span class="nice-slash"></span> EXPLORER
+                  <span class="nice-slash"></span> CHALLENGING
+                  <span class="nice-slash"></span> CONSISTENT</strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="additional bg">
+        <div class="container">
+          <div class="additional__cols-container">
+            <div class="additional__col">
+              <div class="additional__col-title">
+                <h3>LIKES ❤️</h3>
+              </div>
+              <div class="additional__col-description">
+                <p>
+                  Sexy Girls <span class="nice-slash"></span> Sport
+                  <span class="nice-slash"></span> Expensive Cars
+                  <span class="nice-slash"></span> Money
+                  <span class="nice-slash"></span> Web Technologies
+                  <span class="nice-slash"></span> Mobile Technologies
+                  <span class="nice-slash"></span> Healthy Food
+                  <span class="nice-slash"></span> Swimming
+                  <span class="nice-slash"></span> Running
+                  <span class="nice-slash"></span> Cycling
+                  <span class="nice-slash"></span> Dior Perfumes
+                  <span class="nice-slash"></span> Movies
+                  <span class="nice-slash"></span> Series
+                  <span class="nice-slash"></span> Books
+                  <span class="nice-slash"></span> Startups
+                  <span class="nice-slash"></span> Dogs
+                  <span class="nice-slash"></span> Self-Education
+                  <span class="nice-slash"></span> Computer Science
+                  <span class="nice-slash"></span> Apple Devices
+                  <span class="nice-slash"></span> Listening MORGENSHTERN
+                </p>
+              </div>
+            </div>
+            <div class="additional__col">
+              <div class="additional__col-title">
+                <h3>DISLIKES 👎</h3>
+              </div>
+              <div class="additional__col-description">
+                <p>
+                  Coronavirus <span class="nice-slash"></span> Cats
+                  <span class="nice-slash"></span> Boring Tasks
+                  <span class="nice-slash"></span> Gray Days
+                  <span class="nice-slash"></span> Onion
+                  <span class="nice-slash"></span> Raisins
+                  <span class="nice-slash"></span> Oleg Vinnyk
+                </p>
+              </div>
+            </div>
+            <div class="additional__col">
+              <div class="additional__col-title">
+                <h3>WANTS 🥺</h3>
+              </div>
+              <div class="additional__col-description">
+                <p>
+                  To create useful and popular Startup
+                  <span class="nice-slash"></span> To leave in big house near
+                  sea <span class="nice-slash"></span> To be healthy, strong,
+                  mysterious and interesting person
+                  <span class="nice-slash"></span> To create own IT company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
