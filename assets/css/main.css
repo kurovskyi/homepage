@@ -438,6 +438,10 @@ section {
   font-weight: 600;
 }
 
+.languages__description p span.magic-language {
+  cursor: pointer;
+}
+
 .languages__description-annotation span {
   margin-top: 5px;
   display: block;
@@ -551,4 +555,25 @@ section {
 
 .additional__col-description p {
   margin-top: 25px;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer__author {
+  text-align: center;
+  font-size: 16px;
+  color: var(--disabled-ui-color);
+}
+
+.footer__title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer__title span#love {
+  cursor: pointer;
 }
