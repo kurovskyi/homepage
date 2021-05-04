@@ -65,7 +65,7 @@
             <div class="header__img-wrapper">
               <img src="./assets/images/me-main.jpg" alt="It's me 😊" />
             </div>
-            <h1 class="header__title">Dmytro Kurovskyi</h1>
+            <h1 class="header__title">Dmytro Kurovskyi 🔥</h1>
             <div class="header__icons-container">
               <div class="header__icon-link linkedin-link">
                 <a href="https://www.linkedin.com/in/carbony" target="_blank">
@@ -388,8 +388,17 @@
             <div>
               <div class="languages__description">
                 <p>
-                  🇺🇸 ENGLISH <span class="nice-slash"></span> 🇺🇦 UKRAINIAN
-                  <span class="nice-slash"></span> 🌐 RUSSIAN
+                  <span class="magic-language" onclick="speak('en');"
+                    >🇺🇸 ENGLISH</span
+                  >
+                  <span class="nice-slash"></span>
+                  <span class="magic-language" onclick="speak('ua');"
+                    >🇺🇦 UKRAINIAN</span
+                  >
+                  <span class="nice-slash"></span>
+                  <span class="magic-language" onclick="speak('ru');"
+                    >🌐 RUSSIAN</span
+                  >
                 </p>
               </div>
               <div class="languages__description-annotation">
@@ -528,6 +537,19 @@
           </div>
         </div>
       </section>
+      <footer class="footer bg bg-alt">
+        <div class="container">
+          <div class="footer__author">
+            <p>&copy; Kurovskyi, 2021.</p>
+          </div>
+          <div class="footer__title">
+            <p>Made with <span id="love" onclick="love();">❤️</span></p>
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <!-- MAGIC -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
