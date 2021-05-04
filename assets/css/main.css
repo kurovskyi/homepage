@@ -292,3 +292,11 @@ section {
   font-size: 16px;
   text-align: right;
 }
+
+/* SKILLS SECTION */
+
+.skills__inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
