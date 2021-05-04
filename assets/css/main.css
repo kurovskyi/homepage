@@ -1,14 +1,14 @@
 /* THEME */
 
 :root {
-  --primary-bg-color: #ffffff;
+  --primary-bg-color: #fff;
   --secondary-bg-color: #ecf0f1;
   --tertiary-bg-color: #8395a7;
-  --primary-text-color: #000000;
+  --primary-text-color: #000;
   --primary-ui-color: #48dbfb;
   --secondary-ui-color: #0abde3;
   --disabled-ui-color: #8395a7;
-  --const-white: #ffffff;
+  --const-white: #fff;
   --primary-font-family: 'Open Sans', sans-serif;
   --secondary-font-family: 'Montserrat', sans-serif;
   --font-size-1: 14px;
@@ -91,13 +91,16 @@ h2 {
   font-size: var(--font-size-6);
   letter-spacing: var(--base-title-letter-spacing);
 }
+
 h2::before,
 h2::after {
   color: var(--primary-ui-color);
 }
+
 h2::before {
   content: '<';
 }
+
 h2::after {
   content: ' />';
 }
@@ -112,6 +115,7 @@ h3 {
   font-size: var(--font-size-5);
   letter-spacing: var(--base-title-letter-spacing);
 }
+
 h3::after {
   content: ' -';
   color: var(--primary-ui-color);
@@ -138,6 +142,7 @@ li {
   text-align: left;
   padding: var(--space-1) 0;
 }
+
 li::before {
   content: '';
   padding-right: 8px;
@@ -159,6 +164,7 @@ a {
   color: var(--primary-ui-color);
   cursor: pointer;
 }
+
 a:hover {
   color: var(--secondary-ui-color);
 }
@@ -184,9 +190,11 @@ section {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -207,6 +215,7 @@ section {
 .bg {
   background-color: var(--primary-bg-color);
 }
+
 .bg.bg-alt {
   background-color: var(--secondary-bg-color);
 }
@@ -278,6 +287,7 @@ section {
   color: var(--disabled-ui-color);
   width: 22px;
 }
+
 .header__icon-link:hover svg {
   color: var(--secondary-ui-color);
 }
@@ -289,6 +299,16 @@ section {
 }
 
 /* INTRO SECTION */
+
+.intro {
+  padding: var(--space-5) 0;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: var(--space-4) 0;
+  }
+}
 
 .intro__description p {
   text-align: center;
@@ -322,9 +342,11 @@ section {
   width: 100%;
   height: var(--space-5);
 }
+
 .timeline::before {
   top: 0;
 }
+
 .timeline::after {
   bottom: 0;
 }
@@ -378,6 +400,7 @@ section {
   width: 50%;
   text-align: center;
 }
+
 .timeline__item.timeline__item--alt {
   margin-left: 50%;
 }
@@ -387,6 +410,7 @@ section {
     width: 100%;
     text-align: right;
   }
+
   .timeline__item.timeline__item--alt {
     margin-left: 0;
   }
